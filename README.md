@@ -1,5 +1,17 @@
 # Multi-Class-Classification-By-using-Keras-Deep-Learning-
 
+IMPORTANT INSTRUCTION
+
+run code in this order
+1. sgsp_data.py    #it will maintain datasets
+2. sgsp_model.py   # it will maintain model
+3. sgsp_main.py    # it will predict on visualise model
+
+# I personaly design like that for simplicity
+# 
+
+
+
 In this section I wants to predict the class :
 here first i click photos of my friends from image_detect.py code
 I take 4 classes ["gopal","pradeep","sannidhya","shivam"]. But you can take multiple classes .
