@@ -1,15 +1,17 @@
+# import all dependencies
 import numpy as np
 import cv2
 import os
 import numpy as np
-#from PIL import image
-#import pickle
 
-#face_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+# .xml file of frontal face
 face_cascade=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 #mouth_cascade=cv2.CascadeClassifier('haarcascade_mouth.xml')
+
+# 0 for primary camera 1 for secondary camera
 cap = cv2.VideoCapture(0)
-id=input('enter user id')
+
+# use for showing contineous showing progress of images
 from tqdm import tqdm
 sampleNum=0;
 while 1:
@@ -28,9 +30,11 @@ while 1:
         #predicted,config=recogniser.predict(gray[y:y+h,x:x+w]
     cv2.imshow("face",img)   
     cv2.waitKey(5)
-    if(sampleNum>10):
+    # it will take 50000  pictures of face
+    if(sampleNum>50000):
         break
-
-
+# important 
+# release camera 
 cap.release()
+# destroy all open windows
 cv2.destroyAllWindows()
