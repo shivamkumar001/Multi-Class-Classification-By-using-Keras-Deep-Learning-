@@ -57,15 +57,6 @@ prediction=np.argmax(prediction,axis=1)
 print(prediction)
 '''
 '''
-import lrc
-class_index=np.argmax(prediction,axis=1)
-max_prob=prediction[np.arange(len(my_img(image_))),class_index]
-class_output=lrc.classes_[class_index]
-class_prob_list=zip(class_output,max_prob)
-print([str(cls)+'.'+str(prob) for cls,prob in class_prob_list])
-'''
-
-'''
 prediction=model.predict([my_img(image_)]) 
 
 np.sum(prediction[0])
@@ -91,20 +82,6 @@ print("I am 70 % confidence this is : " ,label,"\n ")
 
 
 '''
-
-
-
-
-#this is also correct
-''' 
-cv2.imshow('person is ',image, interpolation = 'bicubic')
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-
-plt.title(label)
-'''
-
-
 import os
 import numpy as np
 #from PIL import image
@@ -150,8 +127,3 @@ np.argmax(prediction[0])
 label=class_names[np.argmax(prediction[0])]
 
 print(label)
-
-'''
-#plt.imshow("11988.jpg")
-#plt.show()
-'''
