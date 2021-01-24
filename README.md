@@ -7,7 +7,7 @@ run code in this order
 2. sgsp_model.py   # it will maintain model
 3. sgsp_main.py    # it will predict on visualise model
 
-# I personaly design like that for simplicity
+# Design
 # 
 
 
